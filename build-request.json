@@ -1,0 +1,41 @@
+{
+  "kind": "build_request",
+  "title": "Replace logo with uploaded image",
+  "projectName": "DAYRY",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Replace the current dayry-logo.dim_512x512.png with the uploaded image-9.png, maintaining the 512x512 dimensions",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "THIS LOGO"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The logo displayed in the sign-in screen matches the uploaded image-9.png",
+        "The favicon in index.html shows the new logo",
+        "The logo maintains proper dimensions and quality at 512x512 pixels"
+      ]
+    }
+  ],
+  "constraints": [
+    "Maintain the existing filename dayry-logo.dim_512x512.png for compatibility with existing references",
+    "Preserve the dark blue/purple color scheme and book icon design from the uploaded image"
+  ],
+  "nonGoals": [
+    "Changing the logo placement or sizing in the UI",
+    "Modifying other branding elements",
+    "Updating the application name or tagline"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Dark blue circular logo with purple book icon and DAYRY text, matching the uploaded reference image (dayry-logo.dim_512x512.png)"
+    ],
+    "edits": []
+  }
+}
